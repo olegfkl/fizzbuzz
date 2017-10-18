@@ -26,3 +26,11 @@ describe 'fizzbuzz' do
     expect(fizzbuzz(45)).to eq 'Fizzbuzz'
   end
 end
+
+describe 'fizzbuzz' do
+  it 'returns same "number" as in argument, when passed a number that is not multiple of 3, 5 or both' do
+    expect(fizzbuzz(8)).to eq 8
+    expect(fizzbuzz(44)).to eq 44
+    expect(fizzbuzz(97)).to eq 97
+  end
+end
